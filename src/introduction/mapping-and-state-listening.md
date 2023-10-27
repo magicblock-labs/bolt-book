@@ -1,6 +1,6 @@
 # Mapping and State listening
 
-The standardized **ECS** pattern allows for easy integration of game components with a rendering engine to display the game interface. The presented framework can be viewed as an open and permissionless alternative to a backend intended as a multiplayer game server. 
+The standardized **ECS** pattern allows for easy integration of game components with a rendering engine to display the game interface. Bolt can be viewed as an open and permissionless alternative to a backend intended as a multiplayer game server. 
 
 For visualization and rendering, existing engines such as [Unity](https://unity.com/), [Unreal Engine](https://www.unrealengine.com), [Phaser](https://phaser.io/), and others can be used. 
 
