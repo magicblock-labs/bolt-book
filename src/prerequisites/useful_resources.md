@@ -14,4 +14,4 @@ Bolt is built on top of Anchor, therefore having a general knowledge of Anchor w
 
 ## Bolt White Paper
 
-Bolt white paper describes in details the architecture and the scalability solution. We recommend reading the basic concepts of ephemeral rollups in section 2.2 of the [Bolt Whitepaper]()
+Bolt white paper describes in details the architecture and the scalability solution. We recommend reading the basic concepts of ephemeral rollups in section 2.2 of the [Bolt Whitepaper](https://book.boltengine.gg/files/Ephemeral_Rollups_are_All_you_Need.pdf)

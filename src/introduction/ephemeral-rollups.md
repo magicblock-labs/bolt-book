@@ -2,7 +2,7 @@
 
 The core intuition is that by harnessing the SVM's account structure and its capacity for parallelization, we can split the app/game state into clusters. Users can lock one or multiple accounts to temporarily transfer the state to an auxiliary layer,  which we define as the "ephemeral rollup", a configurable dedicated runtime. 
 
-This process temporarily entrusts the sequencer to modify the accounts in the ephemeral rollup, where the state can be forcefully reverted and unlocked on the L1 if constraints are not satisfied (read the [whitepaper]() for more details). Despite this delegation, operations and transactions can still use the delegate accounts as readable on the base layer. Non-delegated accounts remain unaffected and modifiable. 
+This process temporarily entrusts the sequencer to modify the accounts in the ephemeral rollup, where the state can be forcefully reverted and unlocked on the L1 if constraints are not satisfied (read the [whitepaper](https://book.boltengine.gg/files/Ephemeral_Rollups_are_All_you_Need.pdf) for more details). Despite this delegation, operations and transactions can still use the delegate accounts as readable on the base layer. Non-delegated accounts remain unaffected and modifiable. 
 
 The ephemeral rollup operates as a specialized SVM runtime to facilitate transaction processing at an elevated throughput. Additionally, this specialized runtime can be customized to include configurations like gasless transactions, quicker block-time, and the inclusion of a ticking mechanism (i.e., an integrated transaction scheduling system like [clockwork](https://github.com/clockwork-xyz/clockwork)) operated without fees). The entire process is transparent to the end user - a specialized RPC provider can route the transactions to the base layer and the ephemeral rollup(s) in parallel during the game session.
 
@@ -10,7 +10,7 @@ The ephemeral rollup operates as a specialized SVM runtime to facilitate transac
 
 ![Ephemeral Rollups](../images/bolt-arch.jpg)
 
-Bolt white paper describes in details the architecture and the scalability solution. We recommend reading the basic concepts of ephemeral rollups in section 2.2 of the [Bolt Whitepaper]()
+Bolt white paper describes in details the architecture and the scalability solution. We recommend reading the basic concepts of ephemeral rollups in section 2.2 of the [Bolt Whitepaper](https://book.boltengine.gg/files/Ephemeral_Rollups_are_All_you_Need.pdf)
 
 ## Avoiding Fragmentation and Benefits
 
