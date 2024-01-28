@@ -5,7 +5,7 @@ Components are plain data structures (classes or structs) that contain data rele
 Create a Position component with
 
 ```
-bolt component -n position
+bolt component position
 ```
 
 which will add a new component to your workspace:

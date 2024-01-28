@@ -5,7 +5,7 @@ Systems contain the logic that processes and manipulates entities based on their
 Create a movement system with with
 
 ```
-bolt system -n system-movement
+bolt system system-movement
 ```
 
 which will add a new system to your workspace:
