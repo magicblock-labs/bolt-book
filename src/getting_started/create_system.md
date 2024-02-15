@@ -12,6 +12,7 @@ which will add a new system to your workspace:
 
 ```rust
 use bolt_lang::*;
+use component_position::Position;
 
 declare_id!("FSa6qoJXFBR3a7ThQkTAMrC15p6NkchPEjBdd4n6dXxA");
 
@@ -20,28 +21,20 @@ declare_id!("FSa6qoJXFBR3a7ThQkTAMrC15p6NkchPEjBdd4n6dXxA");
 pub mod system_movement {
     use super::*;
 
-    pub fn execute(ctx: Context<Component>, args_p: Vec<u8>) -> Result<Position> {
+    pub fn execute(ctx: Context<Components>, args_p: Vec<u8>) -> Result<Components> {
 
-        let mut position = Position::from_account_info(&ctx.accounts.position)?;
+        let position = &mut ctx.accounts.position;
 
         position.x += 1;
         position.y += 1;
 
-        Ok(position)
+        Ok(ctx.accounts)
     }
-}
 
-// Define the Account to parse from the component
-#[derive(Accounts)]
-pub struct Component<'info> {
-    /// CHECK: check that the component is the expected account
-    pub position: AccountInfo<'info>,
-}
-
-#[component_deserialize]
-pub struct Position {
-    pub x: i64,
-    pub y: i64,
-    pub z: i64,
+    // Define the input components
+    #[system_input]
+    pub struct Components {
+        pub position: Position,
+    }
 }
 ```
