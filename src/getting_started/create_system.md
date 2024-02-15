@@ -19,7 +19,6 @@ declare_id!("FSa6qoJXFBR3a7ThQkTAMrC15p6NkchPEjBdd4n6dXxA");
 #[system]
 #[program]
 pub mod system_movement {
-    use super::*;
 
     pub fn execute(ctx: Context<Components>, args_p: Vec<u8>) -> Result<Components> {
 
