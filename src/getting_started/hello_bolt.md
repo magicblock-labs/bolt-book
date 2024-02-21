@@ -19,6 +19,15 @@ This creates a new bolt workspace you can move into. The following are some of t
     - A provider which can be used in your tests (`[provider]`)
     - Scripts that Anchor executes for you (`[scripts]`). The `test` script is run when running `anchor test`. You can run your own scripts with `anchor run <script_name>`.
 
+Run the example unit test with the following command:
+
+```
+bolt test
+```
+
+This command will register a new World instance, create an entity, attach a component, and execute a system on it.
+The test script is available as a reference under the `tests` folder.
+
 ## Anchor
 
 Bolt is built on top of Anchor and supports all Anchor commands, in addition to some extensions. For the complete list of Anchor commands, refer to the [Anchor book](https://book.anchor-lang.com/).
