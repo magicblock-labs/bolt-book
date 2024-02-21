@@ -12,21 +12,6 @@ Go [here](https://docs.solana.com/cli/install-solana-cli-tools) to install Solan
 
 Go [here](https://yarnpkg.com/getting-started/install) to install Yarn.
 
-## Anchor
-
-### Installing Anchor
-
-```
-cargo install --git https://github.com/coral-xyz/anchor avm --locked --force
-```
-
-Install the 0.29.0 version of the CLI using `avm`, and then set it to be the version to use.
-
-```
-avm install 0.29.0
-avm use 0.29.0
-```
-
 ## Bolt
 
 ### Installing Bolt
