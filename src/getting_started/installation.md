@@ -16,7 +16,21 @@ Go [here](https://yarnpkg.com/getting-started/install) to install Yarn.
 
 ### Installing Bolt
 
-Install `Bolt` using Cargo.
+#### Install `Bolt` using npm or yarn.
+
+With npm:
+
+```bash
+npm install -g @magicblock-labs/bolt-cli
+```
+
+With yarn:
+
+```bash
+yarn global add @magicblock-labs/bolt-cli
+```
+
+#### Install `Bolt` using Cargo.
 
 ```
 cargo install --git https://github.com/magicblock-labs/bolt  --locked --force
